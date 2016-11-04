@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BAKER | WEB</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<!--font awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!--Oswald font-->
+	<link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'>
+
+	<!--jQuery-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!--lightbox files-->
+	<link rel="stylesheet" href="JS/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="JS/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!--slider files-->
+	<link rel="stylesheet" href="CSS/flexslider.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="JS/jquery.flexslider.js"></script>
+
+	<!--local files-->
+	<link href="SCSS/site.css" rel="stylesheet" media="screen" />
+	<script src="JS/main.js"></script>
+</head>
+<body>
+<div class="page">
+	<div class="header">
+		<div class="logo">
+			<div class="image"></div>
+		</div>
+		<div class="nav">
+			<ul class="list">
+				<li class="level1">
+					<a class="primary" onclick="page_position('#welcome')" href="#">HOME</a>
+				</li>
+				<li class="level1">
+					<a class="primary" onclick="page_position('#about')" href="#">ABOUT</a>
+				</li>
+				<li class="level1">
+					<a class="primary" onclick="page_position('#portfolio')" href="#">PORTFOLIO</a>
+				</li>
+				<li class="level1">
+					<a class="primary" onclick="page_position('#contact')" href="#">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mobilenav">
+			<i class="toggle fa fa-bars" aria-hidden="true"></i>
+			<nav class="mobnav">
+				<ul class="list">
+					<li class="level1">
+						<a class="primary" onclick="to_position('#welcome')" href="index.html#welcome">HOME</a>
+					</li>
+					<li class="level1">
+						<a class="primary" onclick="to_position('#about')" href="#">ABOUT</a>
+					</li>
+					<li class="level1">
+						<a class="primary" onclick="to_position('#portfolio')" href="#">PORTFOLIO</a>
+					</li>
+					<li class="level1">
+						<a class="primary" onclick="to_position('#contact')" href="#">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="content">
+		<section id="portfolio" class="section portfolio">
+			<h1 class="primary">PORTFOLIO</h1>
+			<div class="row">
+				<h1 class="primary">Batman Website</h1>
+				<div class="col-sm-6">
+					<!-- Place somewhere in the <body> of your page -->
+					<div id="slider" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/batman1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/batman2.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>			
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">Designed and created a website using HTML & CSS. Simple website using tables to display information such as images and text. Also had a drop down menu for navigation of the website.</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Hotel Booking System Website</h1>
+				<div class="col-sm-6">
+					<!-- Place somewhere in the <body> of your page -->
+					<div id="slider2" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/hotel1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/hotel2.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/hotel3.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">Created a website that is designed to work as a system to be used by a hotel to book and delete reservations for customers and store the information in a database. This website also has a simple log in system that allows different users with different permissions to log into the system.</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, PHP</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Student Alarm Mobile App</h1>
+				<div class="col-sm-6">
+					<!-- Place somewhere in the <body> of your page -->
+					<div id="slider3" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/mobapp1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/mobapp2.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">HTML based app that uses jQuery mobile. This app allows students to add alarms for lectures, assignments, social events etc. This is all stored on the device memory and will send push notifications to alert the user to know that they have lectures at certain times or that an assignment is due the following week.</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, JavaScript, jQuery</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Responsive Website</h1>
+				<div class="col-sm-6">
+					<div id="slider4" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/responsive1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/responsive2.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/responsive3.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/responsive4.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">Simple website built using HTML and CSS, this website was the first time I had tried to create a responsive website. Therefore this website was designed to have different layouts for various screen sizes and even use different images for different sizes. This was accomplished by using CSS media queries.</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Comic Film & TV Show Website</h1>
+				<div class="col-sm-6">
+					<div id="slider4" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/comicV1_1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV1_2.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV1_3.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV1_4.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">...</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, JavaScript, jQuery, PHP</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Comic Film & TV Show Website Version 2</h1>
+				<div class="col-sm-6">
+					<div id="slider4" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/comicV2_1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV2_2.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV2_3.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/comicV1_4.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">...</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, Sass, JavaScript, jQuery, AngularJS, PHP</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Dell Mock Website</h1>
+				<div class="col-sm-6">
+					<div id="slider4" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/dell1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/dell2.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">...</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, Sass, JavaScript, jQuery</p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="primary">Pet Reminder App</h1>
+				<div class="col-sm-6">
+					<div id="slider4" class="flexslider slider">
+						<ul class="slides">
+					    	<li>
+					      		<img src="images/petApp1.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/petApp2.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/petApp3.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/petApp4.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/petApp5.png" />
+					    	</li>
+					    	<li>
+					      		<img src="images/petApp6.png" />
+					    	</li>
+					    <!-- items mirrored twice, total of 12 -->
+					  	</ul>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<h1 class="primary">Overview</h1>
+					<p class="secondary">...</p>
+					<h1 class="primary">Languages</h1>
+					<p class="secondary">HTML, CSS, Sass, JavaScript, jQuery, AngularJS</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="footer">
+		
+	</div>
+</div>
+</body>
+</html>

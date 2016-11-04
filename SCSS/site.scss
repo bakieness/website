@@ -1,0 +1,292 @@
+﻿@import "reset";
+// LAYOUT
+
+html
+{
+    min-width: 320px;
+}
+
+body
+{
+}
+
+.header
+{
+    background-color: white;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    .logo
+    {
+        max-width: 1200px;
+        margin: auto;
+        .image
+        {
+            background-image: url(../images/logo2.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 70px;
+            @include phone{
+                height: 60px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.nav
+{
+    position: relative;
+    top: -47px;
+    text-align: right;
+    max-width: 1200px;
+    margin: auto;
+    @include tabletP {
+        display: none;
+    }
+    @include phone {
+        display: none;
+    }
+    .list
+    {
+        list-style: none;    
+        .level1
+        {
+            margin: 0;
+            padding: 10px;
+            display: inline;
+            .primary
+            {
+                font-family: 'Oswald', sans-serif;
+                color: black;
+                text-decoration: none;
+                font-size: 24px;
+                &:hover
+                {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+.mobilenav
+{
+    display: none;
+    @include tabletP {
+        display: block;
+    }
+    @include phone {
+        display: block;
+    }
+
+    .toggle
+    {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px 20px;
+        font-size: 50px;
+        color: $colorRed;
+    }
+    .mobnav
+    {
+        height: 0;
+        overflow: hidden;
+        .list
+        {
+            list-style: none;
+            text-align: center;
+            background-color: white;
+            padding: 0;
+            .level1
+            {
+                margin: 0;
+                padding: 7px 0;
+                border-bottom: 1px solid #ccc;
+                .primary
+                {
+                    color: $colorRed;
+                    font-family: 'oswald';
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+.content
+{
+    padding-top: 71px;
+    .welcome
+    {
+        height: 600px;
+        .image
+        {
+            background-image: url(../images/html.jpg);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        .primary
+        {
+            color: white;
+            position: absolute;
+            top: 425px;
+            right: 175px;
+            font-size: 79px;
+            font-family: 'Oswald', sans-serif;
+            width: 480px;
+            @include tabletP {
+                top: 415px;
+                right: 5px;
+                font-size: 60px;
+                width: 390px;
+            }
+            @include phone {
+                top: 390px;
+                right: 5px;
+                font-size: 60px;
+                width: 315px;
+            }
+        }
+    }
+    .section
+    {
+        //height: 600px;
+        padding-bottom: 40px;
+        .primary
+        {
+            font-size: 50px;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            padding: 30px 0;
+        }
+        .container, .row
+        {
+            max-width: 1200px;
+            margin: auto;
+            .primary
+            {
+                font-size: 30px;
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+            }
+            .secondary
+            {
+                font-size: 20px;
+                font-weight: 100;
+                font-family: 'Oswald', sans-serif;
+                text-align: center;
+                line-height: 25px;
+                @include phone
+                {
+                    font-size: 17px;
+                }
+            }
+            .image
+            {
+                border-radius: 50%;
+                height: 200px;
+                width: 200px;
+                border: none;
+                padding: 0;
+            }
+        }
+        .link
+        {
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+            color: black;
+            &:hover
+            {
+                color: $colorRed;
+            }
+        }
+        .slides
+        {
+        }
+    }
+    & .contact, .about
+    {
+        background-color: $colorRed;
+        color: white;
+        .map
+        {
+            height: 450px;
+            float: none;
+            margin-bottom: 20px;
+            @include phone
+            {
+                height: 350px;
+            }
+        }
+        .subheading, .secondary
+        {
+            font-size: 25px;
+            font-family: 'Oswald', sans-serif;
+            color: white;
+        }
+        .secondary
+        {
+            line-height: 30px;
+            font-weight: 100;
+        }
+        .message
+        {
+            float: right;
+            color: black;
+            input, textarea
+            {
+                height: 30px;
+                width: 450px;
+                margin-bottom: 20px;
+                border-radius: 3px;
+                border: none;
+                @include phone
+                {
+                    width: 100%;
+                }
+            }
+            textarea
+            {
+                height: 120px;
+            }
+            .send
+            {
+                border-radius: 5px;
+                background-color: $colorBlue;
+                color: white;
+                border: none;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                padding: 15px 20px;
+                &:hover
+                {
+                    background-color: white;
+                    color: $colorBlue; 
+                }
+            }
+        }
+        .list
+        {
+            list-style: none;
+            .level1
+            {
+                .secondary
+                {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+// MODULES
+//@import "modules/example";
+
+
+// STATES / FIXES
+@import "helpers";
+@import "fixes";
